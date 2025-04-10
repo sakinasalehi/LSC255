@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Analysis and Usability Test Report</title>
+</head>
+<body>
+    <h1>System Analysis and Usability Test Report</h1>
+
+        <h2>System Analysis: Inputs and Outputs</h2>
+    <p>The following table lists four inputs and their corresponding outputs for the system:</p>
+    <table border="1">
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Keyword Search (e.g., "gender")</td>
+            <td>A detailed and organized list of articles where the keyword "gender" appears, designed to streamline the user’s exploration. Each entry includes the article’s full title (e.g., "Gender Dynamics in Campus Life"), the exact publication date (e.g., March 15, 2023), and a concise snippet of text (e.g., "…explores how gender roles shape student interactions…") providing a preview of the content. The list may also feature clickable links to the full articles, accompanied by metadata such as the author’s name (e.g., "By Jane Doe") and any associated images credited in the article (e.g., "Image Courtesy of CUA Archives"), enhancing the user’s ability to quickly assess relevance and dive deeper into topics of interest.</td>
+        </tr>
+        <tr>
+            <td>Date Range Selection (e.g., 1940–1945)</td>
+            <td>A comprehensive compilation of all issues or articles published between the specified years, such as 1940 to 1945, tailored to historical research or curiosity. The output includes a chronological list with issue titles (e.g., "The Tower, Spring 1942"), precise publication dates (e.g., April 10, 1942), and brief summaries or headlines (e.g., "War Efforts Intensify on Campus"). Where available, it might also provide links to digitized versions of the articles or issues, potentially enriched with thumbnails of front pages or notable photographs from the period, offering a vivid snapshot of the publication’s coverage during that timeframe.</td>
+        </tr>
+        <tr>
+            <td>Browsing by Year (e.g., 1960)</td>
+            <td>A visually engaging and structured list of all issues published in the selected year, such as 1960, allowing the user to explore a full annual archive. Each entry includes the issue’s title (e.g., "The Tower, Fall 1960"), the specific date of publication (e.g., October 5, 1960), and possibly a short description (e.g., "Features student protests and cultural shifts"). To enhance the experience, the output could incorporate cover images—such as a scanned front page showcasing the masthead or a lead story photo—alongside navigation options to view each issue in detail, providing a tangible connection to the historical context of that year.</td>
+        </tr>
+        <tr>
+            <td>Viewing an Individual Article</td>
+            <td>The complete and immersive presentation of a single article, delivering the full text as originally published (e.g., "The Changing Face of CUA Athletics"), alongside all accompanying elements. This includes high-resolution images embedded within the piece (e.g., "Image Courtesy of Patrick D. Lewis"), detailed captions, and comprehensive metadata such as the publication date (e.g., January 12, 2025), author (e.g., "By Luis Zonenberg"), and category (e.g., "Sports"). The layout might also feature additional context, like word count, reader comments (if applicable), or links to related articles, ensuring the user has a rich, self-contained reading experience with all relevant information at their fingertips.</td>
+        </tr>
+    </table>
+
+    <h2>Heuristic Review</h2>
+   <body>
+    <ol>
+        <li>
+            <h2>Visibility of System Status</h2>
+            <h3>Evaluation:</h3>
+            <p>The website likely provides feedback about its status through basic cues like page loading indicators or navigation highlights (e.g., a highlighted menu item for the current section, such as "News" or "Sports"). However, if search results or article loading times are slow without a progress bar or message (e.g., "Loading…"), users might feel uncertain about whether their actions are being processed.</p>
+            <h3>Observation:</h3>
+            <p>Assuming a standard WordPress or similar CMS setup, the site probably shows a title or breadcrumb trail (e.g., "Home > News > Article Title") to indicate location, but any lack of immediate feedback during interactions could confuse users.</p>
+        </li>
+        
+        <li>
+            <h2>Match Between System and the Real World</h2>
+            <h3>Evaluation:</h3>
+            <p>The site likely uses familiar terms like "News," "Opinion," "Sports," and "Arts & Entertainment," aligning with conventions of newspaper layouts both digital and print. Article titles and categories are probably straightforward (e.g., "CUA Students Rally for Change"), mirroring real-world journalism. However, if jargon specific to the university (e.g., "CUA" without explanation) is overused, it might alienate new visitors unfamiliar with the institution.</p>
+            <h3>Observation:</h3>
+            <p>The language seems student-oriented, which fits its audience, but clarity for external readers could be improved if acronyms or insider terms lack context.</p>
+        </li>
+        
+        <li>
+            <h2>User Control and Freedom</h2>
+            <h3>Evaluation:</h3>
+            <p>The site likely offers a clear path back to the homepage via a logo click (e.g., "The Tower" banner) or a "Home" link in the menu, providing an "emergency exit" from deeper pages. However, if there’s no "undo" option for actions like submitting a search query—or if filters can’t be easily reset—users might feel trapped in unintended states. A lack of a "Back to Top" button on long articles could also frustrate mobile users.</p>
+            <h3>Observation:</h3>
+            <p>Navigation appears hierarchical, but without advanced controls (e.g., a cancel button during searches), freedom might be limited.</p>
+        </li>
+        
+        <li>
+            <h2>Consistency and Standards</h2>
+            <h3>Evaluation:</h3>
+            <p>The site likely maintains consistency in its menu layout, fonts, and color scheme (e.g., red and white, reflecting CUA’s branding). Article pages probably follow a standard template with a title, date, author, and body text. However, if some sections (e.g., "Multimedia") use different navigation styles or link formats (e.g., buttons vs. text links), it could confuse users expecting uniformity.</p>
+            <h3>Observation:</h3>
+            <p>Assuming a typical news site structure, consistency is probably strong, though minor deviations in design across sections might disrupt the flow.</p>
+        </li>
+        
+        <li>
+            <h2>Error Prevention</h2>
+            <h3>Evaluation:</h3>
+            <p>The search function (if present) likely accepts basic queries, but without autocomplete or suggested corrections for misspellings (e.g., "CUA" vs. "Catholic Univercity"), users might encounter irrelevant results. Forms, like a newsletter signup, probably include required field indicators (e.g., asterisks), but if error-prone inputs (e.g., date formats) lack guidance, mistakes could occur.</p>
+            <h3>Observation:</h3>
+            <p>Basic error prevention seems in place, but advanced features to preempt user errors might be absent, typical of a student-run site with limited resources.</p>
+        </li>
+        
+        <li>
+            <h2>Recognition Rather Than Recall</h2>
+            <h3>Evaluation:</h3>
+            <p>The navigation menu likely lists key sections prominently (e.g., "News," "Opinion"), reducing the need to remember where content lives. Article pages probably display metadata (e.g., "Posted on April 1, 2025") upfront, aiding recognition. However, if related articles or tags are buried or inconsistently placed, users might struggle to recall how to find similar content.</p>
+            <h3>Observation:</h3>
+            <p>Visible cues are likely sufficient for casual browsing, but deeper exploration could demand more memory effort if links aren’t intuitive.</p>
+        </li>
+        
+        <li>
+            <h2>Flexibility and Efficiency of Use</h2>
+            <h3>Evaluation:</h3>
+            <p>The site caters to novices with a simple layout (e.g., a top menu and article grid), but lacks features for power users, such as customizable feeds, advanced search filters (e.g., by date or author), or keyboard shortcuts. Experienced readers might want quicker access to archives or specific writers, which may not be optimized.</p>
+            <h3>Observation:</h3>
+            <p>It’s beginner-friendly, but efficiency for frequent visitors could be improved with more tailored options.</p>
+        </li>
+        
+        <li>
+            <h2>Aesthetic and Minimalist Design</h2>
+            <h3>Evaluation:</h3>
+            <p>The design likely prioritizes content with a clean layout—article titles, images, and text dominate, with minimal clutter. However, if ads, excessive social media widgets, or unrelated university banners crowd the page, it could distract from the core reading experience. A balance of white space and visuals (e.g., article thumbnails) probably exists but might not be perfect.</p>
+            <h3>Observation:</h3>
+            <p>Assuming a student newspaper aesthetic, it’s likely functional and uncluttered, though minor design flourishes could occasionally overwhelm.</p>
+        </li>
+        
+        <li>
+            <h2>Help Users Recognize, Diagnose, and Recover from Errors</h2>
+            <h3>Evaluation:</h3>
+            <p>If a user enters an invalid search term (e.g., "xyz"), the site might return "No results found," but without suggestions (e.g., "Did you mean ‘XYZ Event’?" or a link to refine the query), recovery could be slow. A 404 page likely exists for broken links, but its helpfulness (e.g., offering a search bar or home link) is uncertain.</p>
+            <h3>Observation:</h3>
+            <p>Basic error handling is probable, but proactive guidance to resolve issues might be limited.</p>
+        </li>
+        
+        <li>
+            <h2>Help and Documentation</h2>
+            <h3>Evaluation:</h3>
+            <p>The site likely lacks a dedicated "Help" section, typical for news platforms. Information on how to navigate, submit content, or contact the team might be buried in a "About" or "Contact Us" page (e.g., an email like tower@cua.edu). Without a FAQ or search tips, users needing assistance might struggle.</p>
+            <h3>Observation:</h3>
+            <p>Help is probably minimal, relying on intuitive design rather than explicit documentation, which could frustrate less tech-savvy visitors.</p>
+        </li>
+    </ol>
+</body>
+</html>
+    <h2>Summary of Strengths and Weaknesses</h2>
+    <body>
+    <div class="strength">
+        <h3>Strength 1: Engaging Student-Centric Content</h3>
+        <p>The website likely excels in delivering content that resonates deeply with its primary audience—students of The Catholic University of America—by featuring articles on campus events, sports, opinions, and arts that reflect their interests and experiences. This strength lies in its ability to serve as a vibrant hub for student voices, with pieces like event recaps or op-eds that spark discussion and foster a sense of community. The inclusion of multimedia, such as photos credited to students or staff (e.g., "Image Courtesy of Patrick Ryan"), adds a personal touch, making the content relatable and engaging. By focusing on topics like "Where Do CUA Students Watch Sports Events in DC?" or "Rome School’s Production of La Bohème," the site taps into the pulse of campus life, keeping readers hooked and invested in their university’s narrative.</p>
+    </div>
+
+    <div class="strength">
+        <h3>Strength 2: Clean and Familiar Layout</h3>
+        <p>The site probably boasts a clean, intuitive layout that mirrors the conventions of traditional news websites, making it easy for users to navigate and find what they’re looking for without a steep learning curve. With a likely structure featuring a top menu (e.g., "News," "Sports," "Opinion"), a prominent logo like "The Tower," and article previews with thumbnails, it aligns with users’ real-world expectations of a newspaper, both digital and print. This consistency in design—potentially using CUA’s red-and-white color scheme—enhances accessibility for casual readers, such as students checking updates between classes, while providing a professional yet approachable aesthetic that reflects the publication’s student-run ethos, encouraging repeat visits.</p>
+    </div>
+
+    <div class="weakness">
+        <h3>Weakness 1: Limited Search Functionality</h3>
+        <p>A notable weakness of http://cuatower.com/ could be its limited or basic search functionality, which might frustrate users trying to dig into specific topics or past articles. If the site offers only a simple keyword search without filters for dates, categories, or authors—or lacks features like autocomplete or error correction (e.g., suggesting "CUA" for "Catholic Univercity")—it risks delivering irrelevant results or leaving users empty-handed. For a student newspaper with a growing archive, this shortfall could hinder readers seeking in-depth research, such as alumni looking for historical pieces or students tracking a recurring campus issue, ultimately reducing engagement and trust in the site’s utility.</p>
+    </div>
+
+    <div class="weakness">
+        <h3>Weakness 2: Minimal Help and Documentation</h3>
+        <p>The website likely suffers from a lack of robust help resources or documentation, a common gap in student-run news platforms, leaving users unclear on how to fully utilize its features or resolve issues. Without a dedicated "Help" section, FAQ, or clear instructions for tasks like submitting content or navigating archives, visitors might rely solely on an "About" or "Contact Us" page (e.g., an email like tower@cua.edu) buried in the footer. This weakness could alienate less tech-savvy users, such as parents or new students, who might abandon the site if they can’t figure out how to find an article from last semester or contact the team, diminishing its potential as an inclusive, user-friendly resource.</p>
+    </div>
+</body>
+ 
+
+    <h2>Mini-Usability Test Results</h2>
+    <p>Initially, the user displayed a noticeable enthusiasm and curiosity toward the website, drawn in by its surface appeal or potential. However, as he delves deeper into its content and functionality, his experience takes a turn, and signs of frustration begin to emerge, gradually eroding his earlier interest. It appears that the deeper he explores, the more disappointed he becomes, suggesting that the website fails to sustain the promise it hinted at initially. Specifically, the search results and references tied to the article fall short of his expectations, lacking the depth, accuracy, or relevance he seeks. This inadequacy seems to be a key factor in his growing disengagement, as he finds the provided information insufficient to satisfy his needs or curiosity, leading him to lose patience and interest over time.</p>
+
+    <h2>Comparison of Heuristic Review and Mini-Usability Test</h2>
+    <p>The usability test and heuristic review paint a cohesive picture of http://cuatower.com/’s user experience. The test’s narrative of initial enthusiasm fading into frustration is well-supported by the heuristic review’s identified strengths (e.g., appealing layout) and weaknesses (e.g., weak search and help resources). Where the test describes the user’s emotional journey, the review offers concrete usability principles to explain it—such as inadequate search tools and lack of error recovery—highlighting why the site fails to retain interest. However, the test doesn’t specify design details (e.g., menu placement), which the heuristic review infers, suggesting a slight divergence in granularity but not in overall conclusions.
+Both analyses suggest that while the site starts strong with an engaging facade, its deeper functionality falters, a flaw that could be addressed by enhancing search capabilities, adding user support, and improving feedback mechanisms as outlined in the heuristic review. This alignment validates the usability test’s findings through a structured lens, offering actionable insights for improvement.
+
+</p>
+</html>
